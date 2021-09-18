@@ -28,9 +28,6 @@ module.exports = {
       }
     };
     logger.info("Initializing the nashakStore", nashakStore);
-    if (global.config == null) {
-      throw new Error("Configuration is not initialized");
-    }
 
     if (nashakStore == null) {
       throw new Error("Cannot initialize nashakStore, unless db config variables are set.");
