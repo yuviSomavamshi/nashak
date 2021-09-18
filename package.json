@@ -1,6 +1,6 @@
 {
   "name": "nashak",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A API testing framework using Excel sheet.",
   "main": "./src/index.js",
   "scripts": {
