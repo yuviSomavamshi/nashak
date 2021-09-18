@@ -54,7 +54,7 @@ module.exports = {
             if (logger.isTraceEnabled()) {
               logger.trace("Importing File: " + filepath);
             }
-            let model = nashakDB["import"](filepath);
+            let model = require(filepath)(nashakDB, Sequelize.DataTypes);
             db[model.name] = model;
           });
         Object.keys(db).forEach((modelName) => {

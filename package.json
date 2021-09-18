@@ -4,6 +4,7 @@
   "description": "A API testing framework using Excel sheet.",
   "main": "./src/index.js",
   "scripts": {
+    "upgrade": "npm i -g npm-check-updates && ncu -u --packageFile package.json",
     "prettify": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json}\""
   },
   "keywords": [
@@ -19,12 +20,12 @@
     "log4js": "^6.3.0",
     "moment": "^2.29.1",
     "mysql": "^2.18.1",
-    "mysql2": "^2.2.5",
-    "node-xlsx": "^0.16.1",
+    "mysql2": "^2.3.0",
+    "node-xlsx": "^0.17.1",
     "selenium-webdriver": "^4.0.0-beta.2",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   }
 }
