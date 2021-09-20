@@ -1,0 +1,6 @@
+{
+  "webPortal": "http://localhost:4000",
+  "logging": {
+    "level": "ALL"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "selenium-js-automation",
+  "version": "1.0.0",
+  "description": "Frontend Automation using nashak",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "commander": "^8.2.0",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
+    "nashak": "^1.0.3",
+    "selenium-webdriver": "^4.0.0-rc-1"
+  },
+  "author": "yuvarajsomavamshi@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "upgrade": "npm i -g npm-check-updates && ncu -u --packageFile package.json",
+    "prettify": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json}\""
+  }
+}
