@@ -24,6 +24,7 @@ try {
   global.logger.info("onBefore :: Initializing the test module..");
   global.logger.info("Test Start Time :: ", currTime);
   setUp().then(() => global.logger.info("Executed the Setup process successfully.."));
+  global.driver.get(global.Settings.webPortal).then(() => global.logger.info("Setup is ready"));
 } catch (e) {
   global.logger.error("ERROR in setting up the environment..");
 }

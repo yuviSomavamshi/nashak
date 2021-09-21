@@ -325,7 +325,7 @@ function printResult(testcase) {
     console.log("   Then     :".magenta.bold, testcase.then);
     console.log("   Expected :".magenta.bold, JSON.stringify(testcase.expected));
     console.log("   Actual   :".magenta.bold, testcase.actual);
-    console.log("   Result => ".magenta.bold, testcase.result == true ? "Pass".green.bold : "Fail".red.bold);
+    console.log("   Result => ".magenta.bold, testcase.result ? "Pass".green.bold : "Fail".red.bold);
   } catch (error) {
     logger.error(error);
   }
