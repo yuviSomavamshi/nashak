@@ -46,8 +46,6 @@ if (!program.wsIndex) {
 
 program.host = program.host ? program.host : "127.0.0.1";
 
-global.args = program;
-
 var excelFiles = program.file.split(",");
 var ws = program.wsIndex.split(",");
 var myArray = [];
@@ -87,21 +85,13 @@ for (var i = 0; i < excelFiles.length; i++) {
 if (program.record && typeof program.record != "string") {
   console.error("\t\nWARN :: DB Url not specified for recording test execution results, so going with default configurations stored in config.js\n");
   program.help();
-} else if (global.Settings.recordResults) {
-  var dbInfo =
-    global.Settings.reportsDB.host +
-    ":" +
-    global.Settings.reportsDB.port +
-    ":" +
-    global.Settings.reportsDB.username +
-    ":" +
-    global.Settings.reportsDB.password +
-    ":" +
-    global.Settings.reportsDB.database;
+} else if (global.Settings.capture.results) {
+  let db = global.Settings.database;
+  var dbInfo = db.host + ":" + db.port + ":" + db.username + ":" + db.password + ":" + db.database;
 }
 
 // if record screenshots, read config.
-if (global.Settings.recordSS) {
+if (global.Settings.capture.screenshots) {
   var ssPath = __dirname + "/screenshots"; // Conf to specify the path from the central server to store the captured SS
   var ssPathUrl = __dirname + "/"; // Base URL from the Central Server to be appended to above Path
 }

@@ -1,4 +1,15 @@
 {
+  "capture": {
+    "screenshots": true,
+    "results": true
+  },
+  "database": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "nashak",
+    "password": "nashak",
+    "database": "nashak"
+  },
   "webPortal": "http://localhost:4000",
   "logging": {
     "level": "ALL"
